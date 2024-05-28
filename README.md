@@ -16,18 +16,12 @@ import {createClient} from '@sanity/client'
 
 4. Refer to the code below for data fetching. The dataset will depend on the created schema under sanity.io.
 
-  const [careers, setCareers] = useState([])
+ const [careers, setCareers] = useState([])
+ useEffect(() => {
+    createClient.fetch(*[_type == "careers"] {
+        title,
+        jobRole,
+      }` ).then((data) => setCareers(data)) .catch(console.error)
+  }, [])
 
-     useEffect(() => {
-        createClient
-          .fetch(
-            `*[_type == "careers"] {
-            title,
-            jobRole,
-          }`
-          )
-          .then((data) => setCareers(data))
-          .catch(console.error)
-      }, [])
-
-  5. For data output, call the const (e.g., {careers.title})
+5. For data output, call the const (e.g., {careers.title})
