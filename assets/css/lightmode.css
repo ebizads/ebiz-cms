@@ -1,0 +1,39 @@
+.sc-kpDprT.etLtEb.sc-eldOKa.OfHOt.sc-beZfNf.biwnAP, 
+.sc-kpDprT.bvuklP.sc-eldOKa.czEiDS.sc-kSRfiq.hydMcq {
+    --tw-bg-opacity: 1;
+    background-color: rgb(69 160 65 / var(--tw-bg-opacity)) !important;
+}
+
+svg[data-sanity-icon="add"] path {
+    stroke: gray;
+  }
+
+.sc-kFCroH.hkdfcl {
+    color: white;
+}
+
+.sc-kFCroH.biepLB.sc-fHejqy.knvLMb.sc-loaeDx.bOormV {
+    --tw-bg-opacity: 1;
+    background-color: rgb(69 160 65 / var(--tw-bg-opacity)) !important;
+}
+
+/* Light mode */
+[data-theme="light"] div[data-ui="Text"].sc-irLvIq span {
+    color: white; /* Specify the color for light mode */
+}
+
+/* Dark mode */
+[data-theme="dark"] div[data-ui="Text"].sc-irLvIq span {
+    color: black; /* Specify the color for dark mode */
+}
+
+[data-sanity-icon="add"] {
+    color: white !important; /* Specify your dark mode color here */
+}
+
+@media (prefers-color-scheme: light) {
+    [data-sanity-icon="add"] {
+        color: black !important; /* Specify your dark mode color here */
+    }
+}   
+

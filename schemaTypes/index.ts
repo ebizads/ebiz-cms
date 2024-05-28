@@ -5,5 +5,6 @@ import casestudies from './casestudies'
 import ourpartners from './ourpartners'
 import news from './news'
 import careers from './careers'
+import articles from './articles'
 
-export const schemaTypes = [solutions, casestudies, ourpartners, news, careers, blockContent]
+export const schemaTypes = [solutions, casestudies, ourpartners, news, articles, careers, blockContent]

@@ -1,0 +1,76 @@
+/* Set background colors to black */
+.gjLLEI.jqhNbM.sc-fZZVMt.feJiAg,
+.sc-kFCroH.hkrdwB.sc-fHejqy.kiNDWl.sc-cSrxju.buZEhJ,
+.sc-kFCroH.eAwAOv.sc-fHejqy.Qdssp.sc-hfxATx.yYVNQ.sc-fNOJtn.dLzQQg,
+.sc-kFCroH.fuZZZB.sc-fHejqy.Qdssp.sc-hJphhG.dkmOHK,
+.sc-kFCroH.gXrZEG.sc-fHejqy.Qdssp.sc-ewnLsh.gDQBxL,
+.sc-kFCroH.gIyZd.sc-fHejqy.Qdssp.sc-ewnLsh.gDQBxL,
+.sc-kFCroH.eYYexS.sc-fHejqy.Qdssp,
+.sc-kFCroH.biepLB.sc-fHejqy.Qdssp.sc-bRoQge.bmLXnl .sc-kFCroH.fRMPIv.sc-fHejqy.Qdssp.sc-ewnLsh.gDQBxL,
+.sc-kFCroH.hfpLob.sc-fHejqy.hBacAp.sc-ekaoJE.cgWyOn,
+.sc-kFCroH.biepLB.sc-fHejqy.Qdssp.sc-bRoQge.bmLXnl
+
+/*CONTENT*/
+    {
+    background-color: black;
+}
+
+/* Set text colors to white */
+.zFKqF,
+.hABBmJ.bEfywH,
+.sc-kFCroH.fRMPIv.sc-fHejqy.Qdssp.sc-ewnLsh.gDQBxL {
+    color: white;
+}
+
+/* Set stroke color of specific SVG icons to white */
+svg[data-sanity-icon="menu"] {
+    stroke: white;
+}
+
+/* Set background color of specific buttons */
+.ispGKa,
+.hABBmJ.bEfywH {
+    --tw-bg-opacity: 1;
+    background-color: rgb(69 160 65 / var(--tw-bg-opacity)) !important;
+}
+
+/* Default styles for both dark and light mode */
+button.sc-hABBmJ.ispGKa span {
+    color: white;
+    /* Color for dark mode */
+}
+
+
+/* Default color for light mode */
+
+
+
+/* vision */ 
+
+.sc-kFCroH.fuZZZB.sc-fHejqy.Qdssp.sc-hhxwqX.fLosWR,
+.sc-kFCroH.fZgITh.sc-fHejqy.Qdssp,
+.sc-kFCroH.esIwOj.sc-fHejqy.Qdssp {
+    background-color: black;
+}
+
+.sc-kFCroH.gXrZEG.sc-fHejqy.Qdssp.sc-kgTdLl.mmOeS {
+    background-color: black;
+}
+
+.sc-kFCroH.biepLB.sc-fHejqy.jqtYoW.sc-loaeDx.bOormV {
+    background-color: black;
+}
+
+
+/* execution bottom */
+
+.sc-kFCroH.kMPdsY.sc-fHejqy.Qdssp.sc-hFCjLd.kXSjeK {
+    background-color: black;
+}
+
+
+.sc-kFCroH.hkdfcl {
+    color: white;
+}
+
+

@@ -1,0 +1,36 @@
+{
+    "root": true,
+    "project": {
+        "name": "studio-branding"
+    },
+    "api": {
+        "projectId": "7l9hdg4d",
+        "dataset": "production"
+    },
+    "plugins": [
+        "@sanity/base",
+        "@sanity/components",
+        "@sanity/default-layout",
+        "@sanity/default-login",
+        "@sanity/desk-tool",
+        "barcode-input",
+        {
+            "name": "custom-styles",
+            "path":".dist//static/styles/variable.css"
+        }
+    ],
+    "parts": [
+        {
+            "name": "part:@sanity/base/schema",
+            "path": "./schemas/schema.js"
+        },
+        {
+            "implements": "part:@sanity/base/brand-logo",
+            "path": "./components/myLogo.js"
+        },
+        {
+            "implements": "part:@sanity/base/theme/variables/override-style",
+            "path": "./styles/variables.css"
+          }
+    ]
+}

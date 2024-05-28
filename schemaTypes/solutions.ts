@@ -19,6 +19,15 @@ export default defineType({
         hotspot: true,
       },
     }),
+
+    defineField({
+      name: 'icon',
+      title: 'Upload an SVG Icon',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
     defineField({
       name: 'body',
       title: 'Body',
