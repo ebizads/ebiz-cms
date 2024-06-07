@@ -25,8 +25,9 @@ export default defineType({
         validation: Rule => Rule.uri({ scheme: ['http', 'https'] })
       }),
   ],
-  
+})
 
+/*
   preview: {
     select: {
       title: 'title',
@@ -38,4 +39,5 @@ export default defineType({
       return {...selection, subtitle: author && `by ${author}`}
     },
   },
-})
+
+*/

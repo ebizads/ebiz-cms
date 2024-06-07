@@ -23,18 +23,10 @@ export default defineType({
             title: 'Description',
             type: 'text',
         }),
-        defineField({
-            name: 'mainImage',
-            title: 'Upload Image',
-            type: 'image',
-            options: {
-              hotspot: true,
-            },
-          }),
     ],
+})
 
-
-    preview: {
+/*    preview: {
         select: {
             title: 'title',
             author: 'author.name',
@@ -44,5 +36,7 @@ export default defineType({
             const { author } = selection
             return { ...selection, subtitle: author && `by ${author}` }
         },
-    },
-})
+    }, 
+*/
+
+
