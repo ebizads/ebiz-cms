@@ -37,6 +37,21 @@ export default defineType({
             },
         }),
     ],
+    orderings: [
+        {
+            title: 'Article Date, Newest',
+            name: 'releaseDateDesc',
+            by: [
+                { field: 'date', direction: 'desc' }
+            ]
+        }, {
+            title: 'Article Date, Oldest',
+            name: 'releaseDateAsc',
+            by: [
+                { field: 'date', direction: 'asc' }
+            ]
+        },
+    ]
 })
 
 /*    preview: {
