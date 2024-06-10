@@ -6,6 +6,11 @@ export default defineType({
     type: 'document',
     fields: [
         defineField({
+            name: 'name',
+            title: 'Name',
+            type: 'string',
+        }),
+        defineField({
             name: 'title',
             title: 'Title',
             type: 'string',
@@ -28,9 +33,9 @@ export default defineType({
             title: 'Upload Image',
             type: 'image',
             options: {
-              hotspot: true,
+                hotspot: true,
             },
-          }),
+        }),
     ],
 
 
