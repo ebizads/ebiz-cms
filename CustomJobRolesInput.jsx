@@ -1,24 +1,24 @@
-import React from 'react';
-import { AddIcon } from '@sanity/icons';
+import React from 'react'
+import {AddIcon} from '@sanity/icons'
 
 const CustomJobRolesInput = React.forwardRef((props, ref) => {
-  const { value = [], onChange } = props;
+  const {value = [], onChange} = props
 
   const handleAddJobRole = () => {
-    onChange([...value, { title: '', description: '' }]);
-  };
+    onChange([...value, {title: '', description: ''}])
+  }
 
   const handleTitleChange = (index, newTitle) => {
-    const newValue = [...value];
-    newValue[index].title = newTitle;
-    onChange(newValue);
-  };
+    const newValue = [...value]
+    newValue[index].title = newTitle
+    onChange(newValue)
+  }
 
   const handleDescriptionChange = (index, newDescription) => {
-    const newValue = [...value];
-    newValue[index].description = newDescription;
-    onChange(newValue);
-  };
+    const newValue = [...value]
+    newValue[index].description = newDescription
+    onChange(newValue)
+  }
 
   return (
     <div>
@@ -41,7 +41,7 @@ const CustomJobRolesInput = React.forwardRef((props, ref) => {
         <AddIcon /> Add Job Role
       </button>
     </div>
-  );
-});
+  )
+})
 
-export default CustomJobRolesInput;
+export default CustomJobRolesInput

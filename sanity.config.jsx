@@ -3,8 +3,8 @@ import {component, structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import logo from './assets/images/ebizlogo.png'
-import "./assets/css/darkmode.css"
-import "./assets/css/lightmode.css"
+import './assets/css/darkmode.css'
+import './assets/css/lightmode.css'
 
 const props = {
   '--my-white': '#fff',
@@ -50,9 +50,7 @@ export const myTheme = buildLegacyTheme({
 })
 
 function MyCustomLogo() {
-  return (
-    <img src={logo} width={25} height={25}/>
-  )
+  return <img src={logo} width={25} height={25} />
 }
 
 export default defineConfig({
@@ -66,8 +64,6 @@ export default defineConfig({
   plugins: [structureTool(), visionTool()],
 
   schema: {
-    types: schemaTypes, 
+    types: schemaTypes,
   },
 })
-
-
