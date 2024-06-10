@@ -84,10 +84,22 @@ export default defineType({
                 },
               ],
             }),
+            {
+              name: 'available',
+              title: 'Available?',
+              type: 'boolean',
+              initialValue: true,
+            },
           ],
         },
       ],
       description: 'Enter the job roles within this department',
     }),
+    {
+      name: 'hidden',
+      title: 'Hidden?',
+      type: 'boolean',
+      initialValue: false,
+    },
   ],
 })
