@@ -37,9 +37,9 @@ export default defineType({
             },
         }),
     ],
+})
 
-
-    preview: {
+/*    preview: {
         select: {
             title: 'title',
             author: 'author.name',
@@ -49,5 +49,7 @@ export default defineType({
             const { author } = selection
             return { ...selection, subtitle: author && `by ${author}` }
         },
-    },
-})
+    }, 
+*/
+
+

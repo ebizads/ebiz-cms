@@ -10,7 +10,16 @@ export default defineType({
       title: 'Title',
       type: 'string',
     }),
-    
+
+    defineField({
+      name: 'icon',
+      title: 'Upload an SVG Icon',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+
     defineField({
       name: 'mainImage',
       title: 'Main image',
@@ -21,20 +30,14 @@ export default defineType({
     }),
 
     defineField({
-      name: 'icon',
-      title: 'Upload an SVG Icon',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    }),
-    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
     }),
   ],
+})
 
+ /*
   preview: {
     select: {
       title: 'title',
@@ -46,4 +49,6 @@ export default defineType({
       return {...selection, subtitle: author && `by ${author}`}
     },
   },
-})
+
+  */
+

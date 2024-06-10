@@ -21,12 +21,13 @@ export default defineType({
     }),
     defineField({
       name: 'body',
-      title: 'Body',
+      title: 'Description',
       type: 'blockContent',
     }),
   ],
+})
 
-  preview: {
+ /*  preview: {
     select: {
       title: 'title',
       author: 'author.name',
@@ -37,4 +38,6 @@ export default defineType({
       return {...selection, subtitle: author && `by ${author}`}
     },
   },
-})
+
+*/
+
