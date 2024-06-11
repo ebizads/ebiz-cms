@@ -30,9 +30,18 @@ export default defineType({
                     type: 'image',
                     fields: [
                         {
-                            type: 'text',
+                            type: 'string',
                             name: 'alt',
                             title: 'Alternative text',
+                            options: {
+                                isHighlighted: true
+                            }
+
+                        },
+                        {
+                            type: 'string',
+                            name: 'caption',
+                            title: 'Caption',
                             options: {
                                 isHighlighted: true
                             }
@@ -43,7 +52,7 @@ export default defineType({
         }),
         defineField({
             name: 'mainImage',
-            title: 'Upload Image',
+            title: 'Featured Image',
             type: 'image',
             options: {
                 hotspot: true,
