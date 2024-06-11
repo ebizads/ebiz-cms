@@ -26,7 +26,25 @@ export default defineType({
         defineField({
             name: 'description',
             title: 'Description',
-            type: 'text',
+            type: 'array',
+            of: [
+                {
+                    type: 'block'
+                },
+                {
+                    type: 'image',
+                    fields: [
+                        {
+                            type: 'text',
+                            name: 'alt',
+                            title: 'Alternative text',
+                            options: {
+                                isHighlighted: true
+                            }
+                        }
+                    ]
+                }
+            ]
         }),
         defineField({
             name: 'mainImage',
