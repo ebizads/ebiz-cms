@@ -6,11 +6,6 @@ export default defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'name',
-            title: 'Name',
-            type: 'string',
-        }),
-        defineField({
             name: 'title',
             title: 'Title',
             type: 'string',
@@ -57,13 +52,13 @@ export default defineType({
     ],
     orderings: [
         {
-            title: 'Article Date, Newest',
+            title: 'Newest',
             name: 'releaseDateDesc',
             by: [
                 { field: 'date', direction: 'desc' }
             ]
         }, {
-            title: 'Article Date, Oldest',
+            title: 'Oldest',
             name: 'releaseDateAsc',
             by: [
                 { field: 'date', direction: 'asc' }
