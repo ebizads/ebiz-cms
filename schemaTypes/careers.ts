@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'careers',
@@ -42,6 +42,7 @@ export default defineType({
                       name: 'key',
                       title: 'Key Responsibility',
                       type: 'text',
+                      rows: 4,
                       description: 'Enter a Key Responsibility for this job',
                     },
                   ],
@@ -60,6 +61,7 @@ export default defineType({
                       name: 'skill',
                       title: 'Skill',
                       type: 'text',
+                      rows: 4,
                       description: 'Enter a required skill for this job',
                     },
                   ],
@@ -78,6 +80,7 @@ export default defineType({
                       name: 'qualification',
                       title: 'Qualification',
                       type: 'text',
+                      rows: 4,
                       description: 'Enter a qualification for this job',
                     },
                   ],
