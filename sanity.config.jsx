@@ -50,12 +50,13 @@ export const myTheme = buildLegacyTheme({
 })
 
 function MyCustomLogo() {
+  // eslint-disable-next-line react/react-in-jsx-scope
   return <img src={logo} width={25} height={25} />
 }
 
 export default defineConfig({
   name: 'default',
-  title: 'Ebizolution',
+  title: 'eBiZolution',
   icon: MyCustomLogo,
 
   projectId: '7l9hdg4d',
