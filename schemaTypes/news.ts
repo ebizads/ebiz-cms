@@ -6,11 +6,6 @@ export default defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'name',
-            title: 'Name',
-            type: 'string',
-        }),
-        defineField({
             name: 'title',
             title: 'Title',
             type: 'string',
@@ -26,17 +21,63 @@ export default defineType({
         defineField({
             name: 'description',
             title: 'Description',
-            type: 'text',
+            type: 'array',
+            of: [
+                {
+                    type: 'block'
+                },
+                {
+                    type: 'image',
+                    options: {
+                        hotspot: true,
+                    },
+                    fields: [
+                        {
+                            type: 'string',
+                            name: 'alt',
+                            title: 'Alternative text',
+                            options: {
+                                isHighlighted: true
+                            }
+
+                        },
+                        {
+                            type: 'string',
+                            name: 'caption',
+                            title: 'Caption',
+                            options: {
+                                isHighlighted: true
+                            }
+                        }
+                    ]
+                }
+            ]
         }),
         defineField({
             name: 'mainImage',
-            title: 'Upload Image',
+            title: 'Featured Image',
             type: 'image',
             options: {
                 hotspot: true,
-            },
+                
+            }
         }),
     ],
+    orderings: [
+        {
+            title: 'Newest',
+            name: 'releaseDateDesc',
+            by: [
+                { field: 'date', direction: 'desc' }
+            ]
+        }, {
+            title: 'Oldest',
+            name: 'releaseDateAsc',
+            by: [
+                { field: 'date', direction: 'asc' }
+            ]
+        },
+    ]
 })
 
 /*    preview: {
