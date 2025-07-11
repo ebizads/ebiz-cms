@@ -10,34 +10,97 @@ export default defineType({
       title: 'Title',
       type: 'string',
     }),
-    
     defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
-      options: {
-        hotspot: true,
-      },
+      options: {hotspot: true},
     }),
     defineField({
-      name: 'body',
+      name: 'description',
       title: 'Description',
-      type: 'blockContent',
+      type: 'text',
+    }),
+    defineField({
+      name: 'overview',
+      title: 'Overview',
+      type: 'object',
+      fields: [
+        {name: 'summary', title: 'Summary', type: 'text'},
+        {name: 'content', title: 'Content', type: 'text'},
+      ],
+    }),
+    defineField({
+      name: 'objectives',
+      title: 'Objectives',
+      type: 'object',
+      fields: [
+        {name: 'summary', title: 'Summary', type: 'text'},
+        {name: 'items', title: 'Items', type: 'array', of: [{type: 'text'}]},
+      ],
+    }),
+    defineField({
+      name: 'challenges',
+      title: 'Challenges',
+      type: 'object',
+      fields: [
+        {name: 'summary', title: 'Summary', type: 'text'},
+        {name: 'items', title: 'Items', type: 'array', of: [{type: 'string'}]},
+      ],
+    }),
+    defineField({
+      name: 'solution',
+      title: 'Solution',
+      type: 'object',
+      fields: [
+        {name: 'summary', title: 'Summary', type: 'text'},
+        {name: 'items', title: 'Items', type: 'array', of: [{type: 'text'}]},
+      ],
+    }),
+    defineField({
+      name: 'results',
+      title: 'Results',
+      type: 'object',
+      fields: [
+        {name: 'summary', title: 'Summary', type: 'text'},
+        {name: 'items', title: 'Items', type: 'array', of: [{type: 'string'}]},
+      ],
+    }),
+    defineField({
+      name: 'benefits',
+      title: 'Benefits',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {name: 'title', title: 'Title', type: 'string'},
+            {name: 'description', title: 'description', type: 'text'},
+          ],
+        },
+      ],
+    }),
+    defineField({
+      name: 'client',
+      title: 'Client',
+      type: 'object',
+      fields: [
+        {
+          name: 'clientProfile',
+          title: 'Client Profile',
+          type: 'string',
+        },
+        {
+          name: 'industry',
+          title: 'Industry',
+          type: 'string',
+        },
+        {
+          name: 'description',
+          title: 'Description',
+          type: 'text',
+        },
+      ],
     }),
   ],
 })
-
- /*  preview: {
-    select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
-    },
-    prepare(selection) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
-    },
-  },
-
-*/
-
