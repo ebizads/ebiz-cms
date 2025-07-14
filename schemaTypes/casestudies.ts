@@ -12,7 +12,7 @@ export default defineType({
     }),
     defineField({
       name: 'mainImage',
-      title: 'Main image',
+      title: 'Main Image',
       type: 'image',
       options: {hotspot: true},
     }),
@@ -22,84 +22,86 @@ export default defineType({
       type: 'text',
     }),
     defineField({
-      name: 'overview',
-      title: 'Overview',
-      type: 'object',
-      fields: [
-        {name: 'summary', title: 'Summary', type: 'text'},
-        {name: 'content', title: 'Content', type: 'text'},
-      ],
+      name: 'background',
+      title: 'Background of the Project',
+      type: 'text',
     }),
     defineField({
       name: 'objectives',
       title: 'Objectives',
-      type: 'object',
-      fields: [
-        {name: 'summary', title: 'Summary', type: 'text'},
-        {name: 'items', title: 'Items', type: 'array', of: [{type: 'text'}]},
-      ],
-    }),
-    defineField({
-      name: 'challenges',
-      title: 'Challenges',
-      type: 'object',
-      fields: [
-        {name: 'summary', title: 'Summary', type: 'text'},
-        {name: 'items', title: 'Items', type: 'array', of: [{type: 'string'}]},
-      ],
-    }),
-    defineField({
-      name: 'solution',
-      title: 'Solution',
-      type: 'object',
-      fields: [
-        {name: 'summary', title: 'Summary', type: 'text'},
-        {name: 'items', title: 'Items', type: 'array', of: [{type: 'text'}]},
-      ],
-    }),
-    defineField({
-      name: 'results',
-      title: 'Results',
-      type: 'object',
-      fields: [
-        {name: 'summary', title: 'Summary', type: 'text'},
-        {name: 'items', title: 'Items', type: 'array', of: [{type: 'string'}]},
-      ],
-    }),
-    defineField({
-      name: 'benefits',
-      title: 'Benefits',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {name: 'title', title: 'Title', type: 'string'},
-            {name: 'description', title: 'description', type: 'text'},
+            {name: 'description', title: 'Description', type: 'text'},
           ],
         },
       ],
     }),
     defineField({
-      name: 'client',
-      title: 'Client',
+      name: 'solution',
+      title: 'The eBiZ Solution',
       type: 'object',
       fields: [
+        {name: 'overview', title: 'Overview', type: 'text'},
         {
-          name: 'clientProfile',
-          title: 'Client Profile',
-          type: 'string',
+          name: 'items',
+          title: 'Item List',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {name: 'title', title: 'Title', type: 'string'},
+                {name: 'description', title: 'Description', type: 'text'},
+              ],
+            },
+          ],
         },
+      ],
+    }),
+    defineField({
+      name: 'benefits',
+      title: 'Benefits',
+      type: 'object',
+      fields: [
+        {name: 'overview', title: 'Overview', type: 'text'},
         {
-          name: 'industry',
-          title: 'Industry',
-          type: 'string',
+          name: 'items',
+          title: 'Item List',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {name: 'title', title: 'Title', type: 'string'},
+                {name: 'description', title: 'Description', type: 'text'},
+              ],
+            },
+          ],
         },
-        {
-          name: 'description',
-          title: 'Description',
-          type: 'text',
-        },
+      ],
+    }),
+    defineField({
+      name: 'conclusion',
+      title: 'Conclusion',
+      type: 'text',
+    }),
+    defineField({
+      name: 'businessUnit',
+      title: 'Business Unit',
+      type: 'string',
+    }),
+    defineField({
+      name: 'industry',
+      title: 'Industry',
+      type: 'object',
+      fields: [
+        {name: 'clientProfile', title: 'Client Profile', type: 'string'},
+        {name: 'specificIndustry', title: 'Specific Industry', type: 'string'},
+        {name: 'description', title: 'Description', type: 'text'},
       ],
     }),
   ],
