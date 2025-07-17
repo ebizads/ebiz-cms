@@ -7,6 +7,7 @@ import news from './news'
 import careers from './careers'
 import articles from './articles'
 import awards from './awards'
+import companyStatistics from './companyStatistics'
 
 export const schemaTypes = [
   solutions,
@@ -16,5 +17,6 @@ export const schemaTypes = [
   articles,
   careers,
   awards,
+  companyStatistics,
   blockContent,
 ]
