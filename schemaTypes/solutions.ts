@@ -13,11 +13,10 @@ export default defineType({
 
     defineField({
       name: 'icon',
-      title: 'Upload an SVG Icon',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      title: 'SVG Icon Markup',
+      type: 'text',
+      description: 'Paste the SVG markup here.',
+      rows: 6,
     }),
 
     defineField({
@@ -37,7 +36,7 @@ export default defineType({
   ],
 })
 
- /*
+/*
   preview: {
     select: {
       title: 'title',
@@ -51,4 +50,3 @@ export default defineType({
   },
 
   */
-
