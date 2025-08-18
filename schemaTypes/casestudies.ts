@@ -104,5 +104,10 @@ export default defineType({
         {name: 'description', title: 'Description', type: 'text'},
       ],
     }),
+    defineField({
+      name: 'date',
+      title: 'Date',
+      type: 'date',
+    }),
   ],
 })
